@@ -21,7 +21,7 @@ interface SituationAdministrative {
   couleur: string
 }
 
-interface User {
+interface Resident {
   id: string
   prefixedId: string
   nomComplet: string
@@ -36,4 +36,10 @@ interface User {
   isFavorite: boolean
 }
 
-export type { User }
+type subSectors = Array<string>
+
+type sectors = {
+  [sector: string]: subSectors
+}
+
+export type { Resident, sectors, subSectors }
