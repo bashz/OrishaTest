@@ -47,7 +47,7 @@ const title = ref('Change Me')
 
 
 <style lang="scss">
-@use './variables' as ${name.toLowerCase()}
+@use './variables' as ${name.toLowerCase()};
 
 .orisha-${classModifier}-${name.toLowerCase()} {
   /* Add component styles here */
