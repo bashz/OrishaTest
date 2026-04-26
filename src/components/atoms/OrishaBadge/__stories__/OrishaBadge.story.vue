@@ -5,8 +5,7 @@ import OrishaBadge from '../OrishaBadge.vue'
 <template>
   <Story group="atoms" title="Badge">
     <Variant>
-      <OrishaBadge/>
+      <OrishaBadge />
     </Variant>
   </Story>
 </template>
-  

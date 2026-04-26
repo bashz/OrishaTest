@@ -1,12 +1,30 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+interface Props {
+  label: string
+  prepend: boolean
+  append: boolean
+}
 
-const title = ref('Change Me')
+const emit = defineEmits(['close'])
+
+defineProps<Props>()
+
+function closed() {
+  emit('close')
+}
 </script>
 
 <template>
   <div class="orisha-a-badge">
-    <h1 class="orisha-a-badge__title">{{ title }}</h1>
+    <slot name="prepend" v-if="prepend">
+      <div><i class="ph ph-dot"></i></div>
+    </slot>
+    <div>
+      <span>{{ label }}</span>
+    </div>
+    <slot name="append" v-if="append">
+      <div><i class="ph ph-x" @click="closed"></i></div>
+    </slot>
   </div>
 </template>
 

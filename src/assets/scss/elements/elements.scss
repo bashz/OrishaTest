@@ -1,0 +1,9 @@
+@use '../mixins/text' as text;
+@forward './headers.scss';
+
+body {
+  font-family:
+    Inter,
+    sans sherif;
+  @include text.body-md;
+}

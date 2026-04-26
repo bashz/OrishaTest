@@ -1,0 +1,50 @@
+@use '../variables/typography' as typography;
+
+@mixin body-xxs($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-xxs;
+  line-height: typography.$line-height-xxs;
+  letter-spacing: typography.$letter-spacing-fixed-tight;
+}
+
+@mixin body-xs($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-xs;
+  line-height: typography.$line-height-xs;
+  letter-spacing: typography.$letter-spacing-fixed-tight;
+}
+
+@mixin body-sm($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-sm;
+  line-height: typography.$line-height-sm;
+  letter-spacing: typography.$letter-spacing-fixed-tight;
+}
+
+@mixin body-md($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-md;
+  line-height: typography.$line-height-md;
+  letter-spacing: typography.$letter-spacing-fixed-tight;
+}
+
+@mixin body-lg($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-lg;
+  line-height: typography.$line-height-lg;
+  letter-spacing: typography.$letter-spacing--relative-tight;
+}
+
+@mixin body-xl($weight: 400) {
+  font-weight: $weight;
+  font-size: typography.$font-size-xl;
+  line-height: typography.$line-height-xl;
+  letter-spacing: typography.$letter-spacing--relative-wide;
+}
+
+@mixin overline {
+  font-weight: 600;
+  font-size: typography.$font-size-xxs;
+  line-height: auto;
+  letter-spacing: typography.$letter-spacing--fixed-wide;
+}

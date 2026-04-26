@@ -1,0 +1,41 @@
+@use '../variables/typography' as typography;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: outfit, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: typography.$font-size-header-xl;
+  line-height: typography.$line-height-header-xl;
+}
+
+h2 {
+  font-size: typography.$font-size-header-lg;
+  line-height: typography.$line-height-header-lg;
+}
+
+h3 {
+  font-size: typography.$font-size-header-md;
+  line-height: typography.$line-height-header-md;
+}
+
+h4 {
+  font-size: typography.$font-size-header-sm;
+  line-height: typography.$line-height-header-sm;
+}
+
+h5 {
+  font-size: typography.$font-size-header-xs;
+  line-height: typography.$line-height-header-xs;
+}
+
+h6 {
+  font-size: typography.$font-size-header-xxs;
+  line-height: typography.$line-height-header-xxs;
+}
