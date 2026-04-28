@@ -26,13 +26,13 @@ defineProps<Props>()
   @include box.flex;
   width: avatar.$size-default;
   height: avatar.$size-default;
-  border-radius: 50%;
-  background-color: colors.$neutral-grey-200;
+  border-radius: corners.$circle;
+  background-color: colors.get('neutral', 'grey', 200);
 
   &__image {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: corners.$circle;
   }
 
   &__placeholder {
@@ -51,7 +51,7 @@ defineProps<Props>()
   }
 
   img {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   &--xs {

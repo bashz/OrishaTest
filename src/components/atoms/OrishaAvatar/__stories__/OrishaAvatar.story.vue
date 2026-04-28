@@ -9,7 +9,7 @@ const state = reactive({
 </script>
 
 <template>
-  <Story group="atoms" title="Avatar" :layout="{ type: 'grid', width: 120 }">
+  <Story group="atoms" title="Avatar/Sizes" :layout="{ type: 'grid', width: 120 }">
     <Variant title="Placeholder xs">
       <OrishaAvatar class="orisha-a-avatar--xs" />
     </Variant>
@@ -51,9 +51,6 @@ const state = reactive({
     </Variant>
     <Variant title="Image xxl">
       <OrishaAvatar class="orisha-a-avatar--xxl" :image="state.image" />
-    </Variant>
-    <Variant title="Headband">
-      <OrishaAvatar class="orisha-a-avatar--headband" :image="state.image" :title="state.title" />
     </Variant>
   </Story>
 </template>
