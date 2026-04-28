@@ -1,4 +1,5 @@
 @use '../variables/typography' as typography;
+@use '../variables/colors' as colors;
 
 h1,
 h2,
@@ -6,6 +7,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: colors.$text-title;
   font-family: outfit, sans-serif;
   font-weight: 500;
 }

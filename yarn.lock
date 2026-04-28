@@ -1192,10 +1192,10 @@
     "@parcel/watcher-win32-ia32" "2.5.6"
     "@parcel/watcher-win32-x64" "2.5.6"
 
-"@phosphor-icons/vue@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@phosphor-icons/vue/-/vue-2.2.1.tgz#e836db5c56e15b04bdad99195308e24597a82b4e"
-  integrity sha512-3RNg1utc2Z5RwPKWFkW3eXI/0BfQAwXgtFxPUPeSzi55jGYUq16b+UqcgbKLazWFlwg5R92OCLKjDiJjeiJcnA==
+"@phosphor-icons/web@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/web/-/web-2.1.2.tgz#edb7170a5fc740bd2448efc09321231e24558d68"
+  integrity sha512-rPAR9o/bEcp4Cw4DEeZHXf+nlGCMNGkNDRizYHM47NLxz9vvEHp/Tt6FMK1NcWadzw/pFDPnRBGi/ofRya958A==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
