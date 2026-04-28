@@ -8,6 +8,14 @@ body {
     sans sherif;
   @include text.body-md;
   color: colors.$text-primary;
+  padding: 0;
+  margin: 0;
+}
+
+nav,
+header {
+  padding: 0;
+  margin: 0;
 }
 
 .orisha-dot {

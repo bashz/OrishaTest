@@ -1,27 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
+import ResidentListView from '@/views/ResidentListView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('@/views/AboutView.vue'),
-    },
-    {
-      path: '/residents',
       name: 'residents',
-      component: () => import('@/views/ResidentListView.vue'),
+      meta: { path: ['Résidence du centre ville', 'Résidents'] },
+      component: ResidentListView,
     },
     {
       path: '/residents/:id',
       name: 'resident',
+      meta: { path: ['Résidence du centre ville', 'Résidents', 'Synthèse'] },
       component: () => import('@/views/ResidentFileView.vue'),
     },
   ],

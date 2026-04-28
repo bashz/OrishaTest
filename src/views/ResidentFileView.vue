@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { findUsersById } from '@/api'
+import { findResidentById } from '@/api'
 import router from '@/router'
 
 onMounted(async () => {
-  const user = await findUsersById(router.currentRoute.value.params.id)
+  const user = await findResidentById(router.currentRoute.value.params.id)
   console.log(user)
 })
 </script>
