@@ -23,7 +23,7 @@
     "scaffold:component": "tsx createComponent.ts"
   },
   "dependencies": {
-    "@phosphor-icons/vue": "^2.2.1",
+    "@phosphor-icons/web": "^2.1.2",
     "pinia": "^3.0.4",
     "vue": "^3.5.32",
     "vue-router": "^5.0.4"
