@@ -46,3 +46,16 @@ ul ul {
 li {
   list-style-type: none;
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  appearance: none; /* Modern resets often opt-in to base-select here */
+}
+
+button {
+  outline: none;
+  border: none;
+}

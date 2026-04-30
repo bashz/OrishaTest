@@ -1,0 +1,98 @@
+@use '@/assets/scss/variables/colors' as colors;
+@use '@/assets/scss/variables/corners' as corners;
+@use '@/assets/scss/variables/spacings' as spacings;
+@use '@/assets/scss/mixins/text' as text;
+@use '@/assets/scss/mixins/box' as box;
+
+button,
+.orisha-button {
+  @include box.flex;
+  @include text.body-md(600);
+  cursor: pointer;
+  color: colors.$text-invert;
+  height: 40px;
+  border-radius: corners.$full;
+  background-color: colors.$primary;
+  padding: spacings.$sm-4 spacings.$md-2;
+
+  &:hover {
+    background-color: colors.$primary-hover;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: initial;
+  }
+}
+
+.orisha-button__prepend {
+  padding-right: spacings.$sm-2;
+}
+
+.orisha-button__append {
+  padding-left: spacings.$sm-2;
+}
+
+.orisha-button--secondary {
+  color: colors.$text-primary;
+  background-color: colors.get('neutral', 'grey', 200);
+
+  &:hover {
+    background-color: colors.get('neutral', 'grey', 300);
+  }
+}
+
+.orisha-button--tertiary {
+  color: colors.$primary;
+  background-color: colors.$text-invert;
+
+  &:hover {
+    background-color: colors.$text-invert;
+    color: colors.$primary-hover;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.orisha-button--white {
+  color: colors.$text-primary;
+  background-color: colors.get('neutral', 'white', 100);
+  border-style: solid;
+  border-width: 1px;
+  border-color: colors.$stroke-primary;
+
+  &:hover {
+    background-color: colors.get('neutral', 'white', 50);
+  }
+}
+
+.orisha-button--destructive {
+  background-color: colors.get('semantic', 'red', 600);
+
+  &:hover {
+    background-color: colors.get('semantic', 'red', 700);
+  }
+}
+
+.orisha-button--sm {
+  height: 36px;
+  padding: spacings.$sm-4 spacings.$md-0;
+}
+
+.orisha-button--xs {
+  @include text.body-sm(600);
+  height: 32px;
+  padding: spacings.$sm-3 spacings.$sm-4;
+}
+
+.orisha-button--icon {
+  border-radius: corners.$default;
+  padding: spacings.$sm-4 spacings.$sm-5;
+  font-size: 20px;
+}

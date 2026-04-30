@@ -3,8 +3,8 @@ import { computed } from 'vue'
 
 interface Props {
   name: string
-  value: string
-  disabled: string
+  value: unknown
+  disabled?: string
 }
 
 const model = defineModel()
@@ -60,7 +60,7 @@ const classes = computed(() => ({
   }
 
   i {
-    font-size: 13px;
+    font-size: 16px;
     color: colors.$text-invert;
     padding: 2px;
   }
@@ -81,7 +81,7 @@ const classes = computed(() => ({
   }
 
   i {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

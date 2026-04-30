@@ -32,19 +32,25 @@
   font-weight: $weight;
   font-size: typography.$font-size-lg;
   line-height: typography.$line-height-lg;
-  letter-spacing: typography.$letter-spacing--relative-tight;
+  letter-spacing: typography.$letter-spacing-relative-tight;
 }
 
 @mixin body-xl($weight: 400) {
   font-weight: $weight;
   font-size: typography.$font-size-xl;
   line-height: typography.$line-height-xl;
-  letter-spacing: typography.$letter-spacing--relative-wide;
+  letter-spacing: typography.$letter-spacing-relative-wide;
 }
 
 @mixin overline {
   font-weight: 600;
   font-size: typography.$font-size-xxs;
   line-height: auto;
-  letter-spacing: typography.$letter-spacing--fixed-wide;
+  letter-spacing: typography.$letter-spacing-fixed-wide;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

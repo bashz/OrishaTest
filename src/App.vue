@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import router from '@/router'
 import OrishaBreadcrumb from './components/molecules/OrishaBreadcrumb/'
+import { usePathStore } from '@/stores/path'
 </script>
 
 <template>
   <header>
-    <OrishaBreadcrumb :path="router.currentRoute.value.meta.path" />
+    <OrishaBreadcrumb :path="usePathStore().path" />
   </header>
 
   <RouterView />

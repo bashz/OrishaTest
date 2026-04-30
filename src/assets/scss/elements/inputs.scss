@@ -1,0 +1,89 @@
+@use '@/assets/scss/variables/colors' as colors;
+@use '@/assets/scss/variables/corners' as corners;
+@use '@/assets/scss/variables/spacings' as spacings;
+@use '@/assets/scss/mixins/text' as text;
+@use '@/assets/scss/mixins/box' as box;
+
+input,
+.orisha-input {
+  @include box.flex;
+  @include text.body-md;
+  color: colors.$text-primary;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: colors.$stroke-secondary;
+  border-radius: corners.$default;
+  padding: spacings.$sm-4 spacings.$md-2;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: initial;
+  }
+}
+
+.orisha-input__container {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    font-size: 20px;
+  }
+}
+
+.orisha-input__container {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+  }
+
+  &--prepend {
+    i,
+    .orisha-input__prepend {
+      left: 6px;
+    }
+
+    input,
+    .orisha-input {
+      padding-left: spacings.$lg-2;
+    }
+  }
+
+  &--append {
+    i,
+    .orisha-input__append {
+      right: 6px;
+    }
+
+    input,
+    .orisha-input {
+      padding-right: spacings.$lg-2;
+    }
+  }
+
+  &--addons {
+    i.orisha-input__prepend {
+      left: 6px;
+    }
+
+    i.orisha-input__append {
+      right: 6px;
+    }
+
+    input,
+    .orisha-input {
+      padding: spacings.$sm-4 spacings.$lg-2;
+    }
+  }
+}

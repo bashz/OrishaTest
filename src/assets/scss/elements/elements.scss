@@ -1,8 +1,13 @@
 @use '../mixins/text' as text;
 @use '../variables/colors' as colors;
+@use '../variables/spacings' as spacings;
+@use '../variables/corners' as corners;
 @forward './headers.scss';
+@forward './buttons';
+@forward './inputs';
 
 body {
+  background-color: colors.$primary;
   font-family:
     Inter,
     sans sherif;
@@ -12,8 +17,17 @@ body {
   margin: 0;
 }
 
+#app {
+  margin: spacings.$sm-4;
+  border-radius: corners.$default;
+  background-color: colors.$surface;
+  min-height: calc(100vh - 16px);
+}
+
 nav,
 header {
+  border-top-left-radius: corners.$default;
+  border-top-right-radius: corners.$default;
   padding: 0;
   margin: 0;
 }
